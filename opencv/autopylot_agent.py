@@ -35,7 +35,7 @@ import cv
 import greenball_tracker
 
 # Routine called by C program.
-def action(img_bytes, img_width, img_height, is_belly, ctrl_state, vbat_flying_percentage, theta, phi, psi, altitude, vx, vy, vz):
+def action(img_bytes, img_width, img_height, is_belly, ctrl_state, vbat_flying_percentage, theta, phi, psi, altitude, vx, vy):
 
     # Set up command defaults
     zap = 0
