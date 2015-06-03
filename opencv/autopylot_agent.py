@@ -1,18 +1,14 @@
 '''
 Python green-ball-tracking agent for AR.Drone Autopylot program.  
-
     Copyright (C) 2013 Simon D. Levy
-
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Lesser General Public License as 
     published by the Free Software Foundation, either version 3 of the 
     License, or (at your option) any later version.
-
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
  You should have received a copy of the GNU Lesser General Public License 
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  You should also have received a copy of the Parrot Parrot AR.Drone 
@@ -31,7 +27,8 @@ Kdy = 0.25
 Kix = 0
 Kiy = 0
 
-import cv
+import cv2
+import numpy as np
 import greenball_tracker
 
 # Routine called by C program.
@@ -53,8 +50,9 @@ def action(img_bytes, img_width, img_height, is_belly, ctrl_state, vbat_flying_p
         action.gaz_1 = 0
                 
     # Create full-color image from bytes
-    image = cv.CreateImageHeader((img_width,img_height), cv.IPL_DEPTH_8U, 3)      
-    cv.SetData(image, img_bytes, img_width*3)
+    # Create full-color image from bytes
+    image = np.frombuffer(img_bytes, np.uint8)
+    image = np.ndarray.reshape(image, (img_height,img_width,3))
                 
     # Grab centroid of green ball
     ctr = greenball_tracker.track(image)
@@ -91,4 +89,3 @@ def _pid(out_1, err, err_1, Kp, Ki, Kd):
 def _dst(ctr, dim, siz):
     siz = siz/2
     return (ctr[dim] - siz) / float(siz)    
-
