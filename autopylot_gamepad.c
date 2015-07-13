@@ -57,8 +57,8 @@ typedef enum {
 typedef enum {
   BUTTON_SELECT = 8,
   BUTTON_START = 9,
-  BUTTON_ZAP = 0,
-  BUTTON_AUTO = 1
+  BUTTON_ZAP = 3,
+  BUTTON_AUTO = 2
 } PAD_BUTTONS;
 
 #else // default to Logitech gamepad
