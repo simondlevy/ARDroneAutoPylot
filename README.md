@@ -60,7 +60,7 @@ using Python, make sure to get the Python development environment:
 
 I set up the program so that the <b>Logitech</b> joystick axes work as follows:
 
-<br><br>
+
 
 <table border="1">
 
@@ -116,13 +116,13 @@ I set up the program so that the <b>Logitech</b> joystick axes work as follows:
 
 </table>
 
-<br><br>
+
 
 The <b>Logitech</b> buttons are labeled 1 - 12 on the joystick.  I set up the program to work with them as
 
 follows:
 
-<br><br>
+
 
 <table border="1">
 
@@ -168,7 +168,7 @@ follows:
 
 </table>
 
-<br><br>
+
 
 
 
@@ -178,7 +178,7 @@ follows:
 
 I set up the program so that the <b>PS3</b> axes work as follows:
 
-<br><br>
+
 
 <table border="1">
 
@@ -234,11 +234,11 @@ I set up the program so that the <b>PS3</b> axes work as follows:
 
 </table>
 
-<br><br>
+
 
 I set up the program to work with the <b>PS3</b> buttons as follows:
 
-<br><br>
+
 
 <table border="1">
 
@@ -284,7 +284,7 @@ I set up the program to work with the <b>PS3</b> buttons as follows:
 
 </table>
 
-<br><br>
+
 
 These button and axis configurations can be modified by editing <b>gamepad.c</b>
 
@@ -319,7 +319,7 @@ are approixmate, and that the minimum reported altitude is around 230 mm.
 You can modify this function to do something
 more interesting.  
 
-<br><br>
+
 
 <a name="matlab">
 
@@ -347,7 +347,7 @@ You will also need the <tt><b>csh</b></tt> command,
 which is used by the Matlab Engine.  To be sure you have this command,
 do <tt><b>sudo apt-get install csh</b></tt> in your Ubuntu shell.
 
-<br><br>
+
 
 <a name="matlab">
 
@@ -357,7 +357,7 @@ If you prefer to program in C, comment-out the Python lines in
 autopylot.makefile, un-comment the C lines (50-51), and work with the code
 in <b>autopylot_c_agent.c</b>. 
 
-<br><br>
+
 
 <a name="greenball">
 
@@ -369,9 +369,6 @@ To run the example in the video, download
 version of <b>autopylot_agent.py</b>. You will need OpenCV for Python, 
 which you can install by following the instructions
 <a href="https://help.ubuntu.com/community/OpenCV">here</a>.
-
-
-<br><br>
 
 Copyright and licensing information can be found in the header of each source file. 
 Please <a href="mailto:simon.d.levy@gmail.com">contact</a> me with any questions or 
