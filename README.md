@@ -3,7 +3,7 @@ ARDroneAutoPylot
 
 Auto-Pilot the Parrot AR.Drone from Python (or Matlab or C)
 
-<a href="https://github.com/simondlevy/ARDroneAutoPylot">This repository</a> contains source code for 
+This repository contains source code for 
 building a stubbed version of the AR.Drone AutoPylot program, which allows you to auto-pilot the 
 <a href="http://ardrone.parrot.com/parrot-ar-drone/usa/"> Parrot AR.Drone</a> 1.0 or 2.0 
 from source code written in Python,  on a computer running 64-bit 
