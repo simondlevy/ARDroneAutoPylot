@@ -14,12 +14,9 @@ As the video shows, the update rate is fast enough to enable interesting experim
 With the AR.Drone 2.0 and my Sony VAIO Pro <a href="http://www.youtube.com/watch?v=QeNTtn231cU">laptop</a>, 
 I have obtained update rates of around 30 Hz.
 
-<p>
-
 If you're interested in a more graphical-interface approach, you might also look into 
 <a href="http://www.urbiforge.org/index.php/Projects/Urbi4ARDrone">URBI</a> or 
 <a href="http://www.willowgarage.com/pages/software/ros-platform">ROS</a>.
-<p>
 
 <b>Please note that I am only supporting this project on 64-bit Ubuntu, using the latest SDK and firmware 
 from Parrot (currently SDK 2.0.1).</b> I do not have the resources to support other OSs or backward 
@@ -34,7 +31,7 @@ To get started, you should download the current AR.Drone <a href="https://projec
 easiest way is to download the current version of 
 <a href="http://itunes.apple.com/us/app/free-flight/id373065271?mt=8">FreeFlight</a> 
 from the AppStore.
-<p>
+
 
 If you have a 
 <a href="http://www.amazon.com/Logitech-Extreme-Joystick-Silver-Black/dp/B00009OY9U">
@@ -309,9 +306,6 @@ export PYTHONPATH=$PYTHONPATH:.
 
 </b></pre>
 
-
-
-<p>
 
 The autopilot is intially off, so you are flying the AR.Drone
 manually. When you push the autopilot button (4 on the Logitech joystick,
