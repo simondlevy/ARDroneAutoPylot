@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_video_bar_text_size">20sp</dimen>
+    <dimen name="media_screen_thumb_size">115dp</dimen>
+    <item type="integer" name="media_gallery_columns_count" format="integer">8</item>
+    <dimen name="photo_video_bottom_bar_height">50dp</dimen>
+    <dimen name="photo_video_white_separator_width">2dp</dimen>
+    <dimen name="photo_video_white_separator_height">30dp</dimen>
+    <dimen name="photo_video_white_separator_margin">15dp</dimen>
+    
+    <dimen name="media_screen_filter_photo_video_width">82dp</dimen>
+    <dimen name="media_screen_filter_photo_width">41dp</dimen>    
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="settings_header_height">57dp</dimen>
+    <dimen name="settings_pager_button_width">40dp</dimen>
+    <dimen name="settings_statusbar_button_width">430dp</dimen>
+    <dimen name="settings_statusbar_button_text_size">30dp</dimen>
+    <dimen name="settings_header_text_size">40sp</dimen>  
+    <dimen name="settings_text_size">24sp</dimen>
+    <dimen name="settings_text_small_size">22sp</dimen>
+    <dimen name="settings_vertical_gap">40dp</dimen>
+    <dimen name="settings_vertical_gap_small">20dp</dimen>
+    <dimen name="settings_hor_gap">50dp</dimen>
+    <dimen name="settings_seek_bounds_value_padding">13dp</dimen>
+    <dimen name="settings_seek_text_padding_top">4dp</dimen>
+    <dimen name="settings_seek_width">460dip</dimen>
+    <dimen name="settings_calibration_btn_padding">40dp</dimen>
+    <dimen name="settings_calibration_btn_vert_padding">0dp</dimen>
+    <dimen name="settings_edit_network_name_width">@dimen/settings_seek_width</dimen>
+    <dimen name="settings_section_check_text_size">14dp</dimen>
+    <dimen name="settings_section_video_item_width">150dp</dimen>
+    <dimen name="settings_section_video_item_height">36dp</dimen>
+</resources>

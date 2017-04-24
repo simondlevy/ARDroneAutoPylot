@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:animateLayoutChanges="true" >
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:background="#000000" android:layout_height="fill_parent"
+        android:orientation="vertical" android:id="@+id/splash">
+        <ImageView android:layout_height="fill_parent" android:src="@drawable/splash"
+            android:layout_width="fill_parent" android:id="@+id/imageView"></ImageView>
+    </LinearLayout>
+    <FrameLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_centerVertical="true" android:id="@+id/videoContainer" android:visibility="gone">
+        <VideoView android:layout_width="fill_parent" android:id="@+id/videoView" android:layout_height="fill_parent" android:layout_gravity="center" android:visibility="visible"></VideoView>
+        <TextView android:id="@+id/textView1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="bottom|right" android:paddingBottom="10dip" android:paddingRight="20dip" style="@style/labelSplashScreen" android:typeface="normal" android:text="@string/skip"></TextView>
+    </FrameLayout>
+
+</RelativeLayout>

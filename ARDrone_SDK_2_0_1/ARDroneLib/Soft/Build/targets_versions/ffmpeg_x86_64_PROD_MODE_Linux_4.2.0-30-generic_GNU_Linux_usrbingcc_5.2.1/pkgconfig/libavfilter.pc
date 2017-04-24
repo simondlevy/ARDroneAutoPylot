@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/levy/Software/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_4.2.0-30-generic_GNU_Linux_usrbingcc_5.2.1
+includedir=/home/levy/Software/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg/../Includes
+
+Name: libavfilter
+Description: FFmpeg video filtering library
+Version: 2.23.0
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavfilter -lSDL -lm -pthread -lz
+Libs.private: 
+Cflags: -I${includedir}

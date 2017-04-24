@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background">
+        <nine-patch
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ff2_progress_bar_bg"
+            android:dither="true"
+         /> 
+    </item>
+    
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <gradient
+                    android:startColor="#80028ac8"
+                    android:centerColor="#80127fb1"
+                    android:centerY="0.75"
+                    android:endColor="#a004638f"
+                    android:angle="270"
+                />
+            </shape>
+        </clip>
+    </item>
+    
+    <item android:id="@android:id/progress">
+        <clip xmlns:android="http://schemas.android.com/apk/res/android">
+        <nine-patch
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:src="@drawable/ff2_progress_bar_fill"
+            android:dither="true"
+         />
+		</clip>
+    </item></layer-list>

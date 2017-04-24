@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="labelSplashScreen">
+    <item name="android:textColor">#FFFFFF</item>
+    <item name="android:textSize">22dip</item>
+</style>
+
+<style name="emergencyText">
+    <item name="android:textColor">#FF0000</item>
+    <item name="android:textSize">18dip</item>
+</style>
+
+<style name="batteryIndicatorText.xlarge">
+    <item name="android:textSize">19dip</item>
+</style>
+
+<style name="recordButtonText.xlarge">
+    <item name="android:textSize">19dip</item>
+</style>
+
+<style name = "updaterText">
+    <item name="android:textColor">#EEEEEE</item>
+    <item name="android:textSize">14dip</item>
+</style>
+
+<style name = "updaterText.bigger">
+    <item name="android:textSize">16dip</item>
+</style>
+
+<style name="LabelSettings">
+    <item name="android:textColor">#000</item>
+    <item name="android:textSize">16dip</item>
+</style>
+
+<style name="LabelSettings.smaller">
+    <item name="android:textSize">14dip</item>
+</style>
+
+<style name="LabelSettings.Value">
+    <item name="android:textSize">21dip</item>
+</style>
+
+<style name="LabelSettings.Value.Seek">
+    <item name="android:paddingBottom">7dip</item>
+</style>
+
+<style name="LabelSettings.SeekBarEdgeValues">
+    <item name="android:textSize">13dip</item>
+</style>
+
+<style name="toppanel">
+    <item name="android:textColor">#ffff7800</item>
+    <item name="android:paddingTop">0dip</item>
+    <item name="android:paddingBottom">0dip</item>
+    <item name="android:paddingRight">8dip</item>
+    <item name="android:paddingLeft">8dip</item>
+    <item name="android:textSize">@dimen/top_panel_text_size</item>
+</style>
+
+</resources>

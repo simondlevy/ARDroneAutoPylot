@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="FreeFlight" default="help">
+
+	<property file="environment.properties" />
+	<!-- The local.properties file is created and updated by the 'android' tool.
+         It contains the path to the SDK. It should *NOT* be checked into
+         Version Control Systems. -->
+	<property file="local.properties" />
+
+	<!-- The ant.properties file can be created by you. It is only edited by the
+         'android' tool to add properties to it.
+         This is the place to change some Ant specific build properties.
+         Here are some properties you may want to change/update:
+
+         source.dir
+             The name of the source directory. Default is 'src'.
+         out.dir
+             The name of the output directory. Default is 'bin'.
+
+         For other overridable properties, look at the beginning of the rules
+         files in the SDK, at tools/ant/build.xml
+
+         Properties related to the SDK location or the project target should
+         be updated using the 'android' tool with the 'update' action.
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems.
+
+         -->
+	<property file="ant.properties" />
+
+	<!-- The project.properties file is created and updated by the 'android'
+         tool, as well as ADT.
+
+         This contains project specific properties such as project target, and library
+         dependencies. Lower level build properties are stored in ant.properties
+         (or in .classpath for Eclipse projects).
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems. -->
+	<loadproperties srcFile="project.properties" />
+
+	<!-- quick check on sdk.dir -->
+	<fail message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through an env var" unless="sdk.dir" />
+
+	<target name="build_ffmpeg">
+		<echo message="Building FFMPEG" />
+		<if condition="${build.is.packaging.debug}">
+			<then>
+				<exec executable="make" dir="${ARDRONE_LIB_PATH}/FFMPEG" failonerror="true">
+					<arg value="android_no_neon" />
+					<arg value="RELEASE_BUILD=no" />
+        			<env key="ANDROID_NDK_PATH" path="${ANDROID_NDK_PATH}"/>
+        		</exec>
+			</then>
+			<else>
+				<exec executable="make" dir="${ARDRONE_LIB_PATH}/FFMPEG" failonerror="true">
+					<arg value="android_no_neon" />
+					<arg value="RELEASE_BUILD=yes" />
+        			<env key="ANDROID_NDK_PATH" path="${ANDROID_NDK_PATH}"/>
+        		</exec>
+			</else>
+		</if>
+	</target>
+	
+	<target name="build_ardrone_lib" depends="build_ffmpeg" >
+		<if condition="${build.is.packaging.debug}">
+            <then>
+            	<echo message="Building ArDroneLib in DEBUG mode" />
+            	<property name="ARDRONE_TARGET_BUILD" value="DEBUG_MODE" />
+        		<exec executable="make" dir="${ARDRONE_LIB_PATH}/Soft/Build" failonerror="true">
+        			<arg value="USE_ANDROID=yes" />
+        			<arg value="RELEASE_BUILD=no" />
+        			<env key="NDK_PATH" path="${ANDROID_NDK_PATH}"/>
+        		</exec>
+			</then>
+			<else>
+				<echo message="Building ArDroneLib in RELEASE mode" />
+				<property name="ARDRONE_TARGET_BUILD" value="PROD_MODE" />
+        		<exec executable="make" dir="${ARDRONE_LIB_PATH}/Soft/Build" failonerror="true">
+        			<arg value="USE_ANDROID=yes" />
+        			<arg value="RELEASE_BUILD=yes" />
+        			<env key="NDK_PATH" path="${ANDROID_NDK_PATH}"/>
+        		</exec>
+			</else>
+		</if>
+
+	</target>
+
+
+	<!-- extension targets. Uncomment the ones where you want to do custom work
+     in between standard targets -->
+
+	<target name="-pre-build" depends="build_ardrone_lib">
+	    <property name="LIB_PC_ARDRONE_DIR" value="${ARDRONE_LIB_PATH}/Soft/Build/targets_versions/ardrone_lib_${ARDRONE_TARGET_BUILD}_vlib_${ARDRONE_TARGET_OS}_${GCC}"/>
+	    <property name="LIB_SDK_DIR" value="${ARDRONE_LIB_PATH}/Soft/Build/targets_versions/sdk_${ARDRONE_TARGET_BUILD}_vlib_${ARDRONE_TARGET_OS}_${GCC}"/>
+	    <property name="LIB_VLIB_DIR" value="${ARDRONE_LIB_PATH}/Soft/Build/targets_versions/vlib_${ARDRONE_TARGET_BUILD}_${ARDRONE_TARGET_OS}_${GCC}"/>
+    	<property name="LIB_PC_ARDRONE" value="${LIB_PC_ARDRONE_DIR}/libpc_ardrone.a"/>
+    	<property name="LIB_SDK" value="${LIB_SDK_DIR}/libsdk.a" />
+    	<property name="LIB_VLIB" value="${LIB_VLIB_DIR}/libvlib.a" />	
+		<property name="LIB_ITTIAM_AVCDECODER" value="${ARDRONE_LIB_PATH}/ITTIAM/Android/avc_decoder/libs/" />
+		<property name="LIB_ITTIAM_M4VCDECODER" value="${ARDRONE_LIB_PATH}/ITTIAM/Android/m4v_decoder/libs/" />
+		<property name="LIB_FFMPEG_ARM7_DIR" value="${ARDRONE_LIB_PATH}/Soft/Build/targets_versions/ffmpeg_armv7_${ARDRONE_TARGET_BUILD}_${ARDRONE_TARGET_OS}_${GCC}/" />
+		<property name="LIB_FFMPEG_ARM6_DIR" value="${ARDRONE_LIB_PATH}/Soft/Build/targets_versions/ffmpeg_armv6_${ARDRONE_TARGET_BUILD}_${ARDRONE_TARGET_OS}_${GCC}/" />
+
+		<property name="LIB_FFMPEG_NO_NEON_DIR" value="${ARDRONE_LIB_PATH}/Soft/Build/targets_versions/ffmpeg_android_no_neon_${ARDRONE_TARGET_BUILD}_${ARDRONE_TARGET_OS}_${GCC}/" />
+
+		<copy todir="${FFMPEG_LIBS}/Includes">
+			<fileset dir="${ARDRONE_LIB_PATH}/FFMPEG/Includes" />
+		</copy>
+
+		<!--
+		<copy todir="${ITTIAM_LIBS}/avc_decoder/includes">
+			<fileset dir="${ARDRONE_LIB_PATH}/ITTIAM/Android/avc_decoder/includes" />
+		</copy>
+		
+		<copy todir="${ITTIAM_LIBS}/m4v_decoder/includes">
+			<fileset dir="${ARDRONE_LIB_PATH}/ITTIAM/Android/m4v_decoder/includes" />
+		</copy>
+		-->
+		
+    	<echo message="${LIB_PC_ARDRONE}" />
+    	<copy file="${LIB_PC_ARDRONE}" todir="${ADFREEFLIGHT_LIBS}"/>
+        <copy file="${LIB_SDK}" todir="${ADFREEFLIGHT_LIBS}" />
+        <copy file="${LIB_VLIB}" todir="${ADFREEFLIGHT_LIBS}" />
+
+		<copy todir="${FFMPEG_LIBS}/armeabi-v7a">
+			<fileset dir="${LIB_FFMPEG_ARM7_DIR}" includes="*.so"/>
+		</copy>		
+		
+		<copy todir="${FFMPEG_LIBS}/armeabi">
+			<fileset dir="${LIB_FFMPEG_ARM6_DIR}" includes="*.so"/>
+		</copy>		
+		
+		<exec executable="bash" dir="${FFMPEG_LIBS}" failonerror="true">
+			<arg value="fixVersionsNumbers.bash"/>
+			<arg value="armeabi-v7a"/>
+		</exec>
+		
+		<exec executable="bash" dir="${FFMPEG_LIBS}" failonerror="true">
+			<arg value="fixVersionsNumbers.bash"/>
+			<arg value="armeabi"/>
+		</exec>
+		
+		<!--
+		<copy todir="${ITTIAM_LIBS}">
+		   <fileset dir="${LIB_ITTIAM_AVCDECODER}" includes="*.a"/> 
+		   <fileset dir="${LIB_ITTIAM_M4VCDECODER}"/>
+		</copy>
+		-->
+
+			<!-- In debug mode we need to copy debug symbols also -->
+		<if condition="${build.is.packaging.debug}">
+            <then>
+            	<echo message="Copying debug symbols for PC libraru\y" />
+            	<copy todir="${basedir}/obj/local/armeabi-v7a/objs-debug/ardrone_lib" failonerror="1">
+					<fileset dir="${LIB_PC_ARDRONE_DIR}" includes="**/*.o"/>
+					<fileset dir="${LIB_PC_ARDRONE_DIR}" includes="**/*.d"/>
+
+				</copy>	
+				<copy todir="${basedir}/obj/local/armeabi/objs-debug/ardrone_lib" failonerror="1" >
+					<fileset dir="${LIB_PC_ARDRONE_DIR}" includes="**/*.o,**/*.d)"/>
+				</copy>		
+				
+				<echo message="Copying debug symbols for SDK library"/>
+            	<copy todir="${basedir}/obj/local/armeabi-v7a/objs-debug/sdk" failonerror="1">
+					<fileset dir="${LIB_SDK_DIR}" includes="**/*.o,**/*.d"/>
+				</copy>	
+				<copy todir="${basedir}/obj/local/armeabi/objs-debug/sdk" failonerror="1">
+					<fileset dir="${LIB_SDK_DIR}" includes="**/*.o,**/*.d)"/>
+				</copy>	
+				
+				<echo message="Copying debug symbols for Vlib"/>	
+					<copy todir="${basedir}/obj/local/armeabi-v7a/objs-debug/vlib" failonerror="1">
+					<fileset dir="${LIB_VLIB_DIR}" includes="**/*.o,**/*.d"/>
+				</copy>	
+				<copy todir="${basedir}/obj/local/armeabi/objs-debug/vlib" failonerror="1">
+					<fileset dir="${LIB_VLIB_DIR}" includes="**/*.o,**/*.d)"/>
+				</copy>	
+				<echo message="Done." />
+			</then>
+		</if>
+		
+	</target>
+	
+	<target name="-pre-compile">
+		<exec executable="${ANDROID_NDK_PATH}/ndk-build" dir="" failonerror="true">
+		    		<env key="SDK_PATH" path="${ARDRONE_LIB_PATH}"/>
+					<env key="NDK_DEBUG" value="${build.is.packaging.debug}" />
+		    	</exec>
+	</target>
+
+	<target name="-post-build">
+	    
+	</target>
+	<!--
+    /* This is typically used for code obfuscation.
+       Compiled code location: ${out.classes.absolute.dir}
+       If this is not done in place, override ${out.dex.input.absolute.dir} */
+    <target name="-post-compile">
+	</target>
+    -->
+	
+	 <target name="clean" description="Removes output files created by other targets.">
+       <delete dir="${out.absolute.dir}" verbose="${verbose}" />
+       <delete dir="${gen.absolute.dir}" verbose="${verbose}" />
+       <exec executable="make" dir="${ARDRONE_LIB_PATH}/Soft/Build" failonerror="true">
+		 <arg value="clean" />
+         <arg value="USE_ANDROID=yes" />
+         <env key="NDK_PATH" path="${ANDROID_NDK_PATH}"/>
+	   </exec>
+	   <delete dir="${FFMPEG_LIBS}/Includes" verbose="${verbose}" />
+	   <delete dir="${ITTIAM_LIBS}/avc_decoder" verbose="${verbose}" />
+	   <delete dir="${ITTIAM_LIBS}/m4v_decoder" verbose="${verbose}" />
+	   <delete>
+	   	  <fileset dir="jni/API" includes="*.a" />
+	      <fileset dir="${FFMPEG_LIBS}" includes="*.so"/>
+	   	  <fileset dir="${ITTIAM_LIBS}" includes="*.a" />
+	   	</delete>
+	   <delete dir="obj" verbose="${verbose}"> </delete>
+    </target>
+
+	<!-- Import the actual build file.
+
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+	<!-- version-tag: custom -->
+	<import file="${sdk.dir}/tools/ant/build.xml" />
+
+</project>

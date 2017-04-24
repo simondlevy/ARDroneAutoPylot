@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photos_videos">PHOTOS / VIDEOS</string>
+    <string name="sort">SORT: </string>
+    <string name="edit">EDIT</string>
+    <string name="select_all">SELECT ALL</string>
+    <string name="delete">DELETE</string>
+    <string name="cancel_capit">CANCEL</string>
+    <string name="clear_all">CLEAR ALL</string>
+    <string name="delete_popup">Do you want to delete this media?</string>
+    <string name="delete_media">Delete media</string>
+    <string name="share_capit">SHARE</string>
+    <string name="share">Share</string>
+    <string name="of">of</string>
+
+</resources>

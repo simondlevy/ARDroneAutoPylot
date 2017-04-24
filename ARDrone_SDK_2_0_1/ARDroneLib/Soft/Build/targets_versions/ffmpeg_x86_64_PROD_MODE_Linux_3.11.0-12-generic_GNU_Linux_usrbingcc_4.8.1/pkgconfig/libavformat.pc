@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/levys/Development/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_3.11.0-12-generic_GNU_Linux_usrbingcc_4.8.1
+includedir=/home/levys/Development/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg/../Includes
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 53.4.0
+Requires: libavcodec = 53.7.0
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavformat -lm -pthread
+Libs.private: 
+Cflags: -I${includedir}

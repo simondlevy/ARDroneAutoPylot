@@ -25,9 +25,7 @@ compatibility.
 <a name="Getting_Started"> 
 
 <h3>Getting Started</h3>
-
-To get started, you should download the current AR.Drone <a href="https://projects.ardrone.org">SDK</a>
-(registration required). Also make sure your AR.Drone has the current firmware -- 
+Make sure your AR.Drone has the current firmware -- 
 easiest way is to download the current version of 
 <a href="http://itunes.apple.com/us/app/free-flight/id373065271?mt=8">FreeFlight</a> 
 from the AppStore.

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="FreeFlightBase" parent="@android:Theme.Light" />
+
+    <style name="ARDroneDashboard.Label" parent="@android:style/TextAppearance.Widget.TextView"></style>
+
+    <style name="FreeFlightTheme" parent="FreeFlightBase">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <item name="android:checkboxStyle">@style/SettingsCheckBox</item>
+        <item name="android:buttonStyle">@style/SettingsButton</item>
+        <item name="android:editTextStyle">@style/SettingsEditText</item>
+        <item name="android:textViewStyle">@style/TextView</item>
+        <item name="viewPagerIndicatorStyle">@style/ViewPagerIndicatorStyle</item>
+    </style>
+    
+    <style name="FreeFlightTheme.HudScreen" parent="FreeFlightTheme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    
+    <style name="FreeFlightTheme.SettingsScreen" parent="FreeFlightTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+         <item name="android:textViewStyle">@style/SettingsTextView</item>
+         <item name="android:seekBarStyle">@style/SettingsSeekBar</item>
+         <item name="android:progressBarStyle">@style/ProgressBar</item>
+         <item name="android:windowSoftInputMode">stateUnchanged|adjustNothing</item>
+    </style>
+    
+    <style name="FreeFlightTheme.FirmwareUpdateScreen" parent="FreeFlightTheme">
+        <item name="android:textViewStyle">@style/FirmwareUpdateText</item>
+        <item name="android:progressBarStyle">@style/ProgressBar</item>
+    </style>
+    
+    <style name="FreeFlightTheme.Dashboard" parent="FreeFlightTheme">
+        <item name="android:windowBackground">@drawable/ff2_flying_drone</item>
+    </style>
+    
+    <style name="FreeFlightTheme.TipsScreen" parent="FreeFlightTheme">
+      	
+    </style>
+    
+    <style name="FreeFlightTheme.VideoScreen" parent="FreeFlightBase">
+        <item name="android:windowBackground">@color/video_window_background</item>
+    </style>
+    
+    <style name="FreeFlightTheme.BrowserScreen" parent="FreeFlightTheme">
+        <item name="android:animateLayoutChanges">false</item>
+        <item name="android:buttonStyle">@android:style/Widget.Button</item>
+    </style>
+    
+    <style name="FreeFlight.SplashScreen" parent="FreeFlightBase">
+        <item name="android:background">@color/black</item>
+    </style>
+</resources>

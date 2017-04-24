@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photos_videos">FOTOS / VIDEOS</string>
+    <string name="sort">SORTIEREN: </string>
+    <string name="edit">EDIT</string> <!-- not found -->
+    <string name="select_all">SELECT ALL</string> <!-- not found -->
+    <string name="delete">LÖSCHEN</string>
+    <string name="cancel_capit">ABBRECHEN</string>
+    <string name="clear_all">CLEAR ALL</string> <!-- not found -->
+    <string name="delete_popup">Möchten sie diese Einheit löschen?</string>
+    <string name="delete_media">Einheit Löschen</string>
+    <string name="share_capit">TEILEN</string>
+    <string name="share">Teilen</string>
+    <string name="of">von</string>
+
+</resources>

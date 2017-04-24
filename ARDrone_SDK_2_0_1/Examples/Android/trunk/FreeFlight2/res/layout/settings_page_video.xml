@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/toggleAdaptiveVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/toggleAdaptiveVideo"
+        android:text="@string/adaptive_video" android:layout_marginRight="@dimen/settings_hor_gap" android:layout_alignTop="@+id/toggleAdaptiveVideo"/>
+
+    <RadioGroup
+        android:id="@+id/rgVideoCodec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleAdaptiveVideo"
+        android:layout_below="@+id/toggleAdaptiveVideo"
+        android:orientation="horizontal" android:layout_marginTop="@dimen/settings_vertical_gap">
+
+        <RadioButton
+            android:id="@+id/rbVideoVLIB"
+            android:layout_width="@dimen/settings_section_video_item_width"
+            android:layout_height="@dimen/settings_section_video_item_height"
+            android:checked="true"
+            android:text="@string/vlib" android:button="@null" android:background="@drawable/section_left" android:textSize="@dimen/settings_section_check_text_size" android:gravity="center" android:textColor="#FFFFFFFF" android:shadowColor="#FF000000" android:shadowDy="-0.5" android:shadowRadius="1" android:paddingTop="1dp" android:paddingBottom="1dp"/>
+
+        <RadioButton
+            android:id="@+id/rbVideoP264"
+            android:layout_width="@dimen/settings_section_video_item_width"
+            android:layout_height="@dimen/settings_section_video_item_height"
+            android:text="@string/p264" android:button="@null" android:background="@drawable/section_right" android:textSize="@dimen/settings_section_check_text_size" android:gravity="center" android:checked="false" android:textColor="#FFFFFFFF" android:shadowColor="#FF000000" android:shadowDy="-0.5" android:shadowRadius="1" android:paddingTop="1dp" android:paddingBottom="1dp"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rgVideoCodec"
+        android:layout_alignTop="@+id/rgVideoCodec"
+        android:layout_toLeftOf="@+id/rgVideoCodec"
+        android:text="@string/video_codec" android:gravity="center_vertical" android:layout_marginRight="@dimen/settings_hor_gap"/>
+
+</RelativeLayout>

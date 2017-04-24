@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=/home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_3.13.0-43-generic_GNU_Linux_usrbingcc_4.8.2
+includedir=/home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg/../Includes
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 51.9.1
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir} -lavutil -lm
+Libs.private: 
+Cflags: -I${includedir}

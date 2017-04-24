@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/incl_status_bar" />
+
+    <include
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_header_height"
+        layout="@layout/incl_action_bar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtCurrStepTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/checking_repairing" android:layout_marginTop="@dimen/firmware_curr_step_title_margin_top" android:textSize="@dimen/firmware_curr_step_font_size"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:state_enabled="true"
+            android:layout_width="@dimen/firmware_progress_bar_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/firmware_progress_bar_margin_top" android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/txtInstalling"
+            android:state_enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="@dimen/firmware_steps_margin_bottom"
+            android:layout_marginLeft="@dimen/firmware_steps_margin_left"
+            android:text="@string/installing" android:drawableLeft="@drawable/ff2_updater_empty" android:gravity="center_vertical" android:textSize="@dimen/firmware_steps_font_size"/>
+
+        <TextView
+            android:id="@+id/txtRestarting"
+            android:state_enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtInstalling"
+            android:layout_alignLeft="@+id/txtInstalling"
+            android:text="@string/restarting_ardrone" android:layout_marginBottom="@dimen/firmware_steps_vertical_margin" android:drawableLeft="@drawable/ff2_updater_empty" android:gravity="center_vertical" android:textSize="@dimen/firmware_steps_font_size"/>
+
+        <TextView
+            android:id="@+id/txtSendingFile"
+            android:state_enabled="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtRestarting"
+            android:layout_alignLeft="@+id/txtRestarting"
+            android:text="@string/sending_file" android:layout_marginBottom="@dimen/firmware_steps_vertical_margin" android:drawableLeft="@drawable/ff2_updater_empty" android:gravity="center_vertical" android:textSize="@dimen/firmware_steps_font_size"/>
+
+        <TextView
+            android:id="@+id/txtCheckingRepairing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtSendingFile"
+            android:layout_alignLeft="@+id/txtSendingFile"
+            android:text="@string/checking_repairing" android:layout_marginBottom="@dimen/firmware_steps_vertical_margin" android:drawableLeft="@drawable/ff2_updater_empty" android:gravity="center_vertical" android:textSize="@dimen/firmware_steps_font_size"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCurrStepTitle"
+            android:layout_centerHorizontal="true"
+            android:text="@string/if_ardrone_led_green_reset_wifi_connection" android:layout_marginTop="@dimen/firmware_message_margin_top" android:maxLines="3" android:gravity="center" android:paddingLeft="20dp" android:paddingRight="20dp" android:lines="2" android:textSize="@dimen/firmware_text_font_size" android:lineSpacingMultiplier="1.3" android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

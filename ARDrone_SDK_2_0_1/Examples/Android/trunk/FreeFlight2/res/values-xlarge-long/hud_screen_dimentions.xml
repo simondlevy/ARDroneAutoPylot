@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hud_top_text_margin_top">11dp</dimen>
+    <dimen name="hud_btn_settings_margin_left">224dp</dimen>
+    <dimen name="hud_battery_indicator_margin_left">100dp</dimen>
+    <dimen name="hud_wifi_indicator_margin_left">320dp</dimen>
+    <dimen name="hud_alert_text_size">22sp</dimen>
+    <dimen name="hud_alert_text_margin_top">136dp</dimen>
+    <dimen name="hud_battery_text_size">22dp</dimen>
+    <dimen name="hud_battery_text_margin_top">@dimen/hud_top_text_margin_top</dimen>
+    <dimen name="hud_rec_text_margin_top">@dimen/hud_top_text_margin_top</dimen>
+    <dimen name="hud_btn_rec_margin_right">154dp</dimen>
+    <dimen name="hud_rec_text_margin_right">167dp</dimen>
+    <dimen name="hud_btn_camera_switch_margin_right">256dp</dimen>
+    <dimen name="hud_usb_indicator_margin_right">144dp</dimen>
+    <dimen name="hud_usb_indicator_text_margin_right">116dp</dimen>
+    <dimen name="hud_usb_indicator_text_margin_top">@dimen/hud_top_text_margin_top</dimen>
+    <dimen name="hud_btn_back_margin_left">8dp</dimen>
+    <dimen name="hud_popup_margin_top">120dp</dimen>
+    <dimen name="hud_popup_width">528dp</dimen>
+    <dimen name="hud_popup_height">120dp</dimen>
+    <dimen name="hud_popup_text_size">24sp</dimen> 
+</resources>

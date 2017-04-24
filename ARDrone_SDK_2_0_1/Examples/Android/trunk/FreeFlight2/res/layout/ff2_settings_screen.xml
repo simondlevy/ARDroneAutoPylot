@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.parrot.freeflight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_header_height"
+        android:background="@color/top_bar_background" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/TopBarButton.Dark.Back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:paddingLeft="5dp" android:paddingRight="5dp"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/TopBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/PERSONAL_SETTINGS"/>
+  
+        <com.parrot.freeflight.ui.controls.ViewPagerIndicator
+            android:id="@+id/pageIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip"
+            app:gap="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            style="@style/SettingsNavigationButton.Prev"
+            android:layout_width="@dimen/settings_pager_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/arrow_left_orange"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            style="@style/SettingsNavigationButton.Next"
+            android:layout_width="@dimen/settings_pager_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_header_height"
+        android:background="@color/bottom_bar_background" >
+
+        <RelativeLayout
+            android:id="@+id/btnDefaultSettings"
+            style="@style/BottomBarButton"
+            android:layout_width="@dimen/settings_statusbar_button_width"
+            android:layout_height="match_parent"
+            android:clickable="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:state_enabled="false">
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/BottomBarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:duplicateParentState="true"
+                android:padding="0dp"
+                android:text="@string/default_settings" android:clickable="false" android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView1"
+                android:duplicateParentState="true"
+                android:padding="0dp"
+                android:src="@drawable/default_settings" android:scaleType="fitCenter" android:baselineAlignBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btnFlatTrim"
+            style="@style/BottomBarButton"
+            android:layout_width="@dimen/settings_statusbar_button_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:clickable="true" android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/BottomBarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:duplicateParentState="true"
+                android:padding="0dp"
+                android:text="@string/flat_trim" android:clickable="false" android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/textView2"
+                android:baselineAlignBottom="true"
+                android:duplicateParentState="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/flattrim" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

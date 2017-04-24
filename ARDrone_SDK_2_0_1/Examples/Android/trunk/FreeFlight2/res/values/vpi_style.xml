@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ViewPagerIndicatorStyle">
+        <item name="color">@color/default_circle_indicator_color</item>
+        <item name="activeColor">@color/default_circle_indicator_active_color</item>
+        <item name="radius">@dimen/default_circle_indicator_radius</item>
+        <item name="gap">@dimen/default_circle_indicator_gap</item>
+    </style>
+</resources>

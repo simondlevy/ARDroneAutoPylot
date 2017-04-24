@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="orange_bar_title_text_size">40sp</dimen>
+    <dimen name="orange_bar_title_text_margin">40dp</dimen>
+	<dimen name="orange_bar_web_btn_width">57dp</dimen>
+</resources>

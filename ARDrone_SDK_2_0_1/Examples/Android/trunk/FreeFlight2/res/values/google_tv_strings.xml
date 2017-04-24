@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <string name="automatic_skip">AUTOMATIC SKIP</string>    
+      <string name="start">START</string>   
+      <string name="how_to_control">HOW TO CONTROL THE AR.DRONE?</string>      
+</resources>

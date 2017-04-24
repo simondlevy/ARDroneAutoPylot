@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<firmware
+    fileName="ardrone_update.plf"
+    fileName2="ardrone2_update.plf"
+    repairFileName="repair.bin"
+    bootldrFileName="sys_bootldr.bin" 
+    repairVersion="1.4.7"
+/> 

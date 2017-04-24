@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.parrot.freeflight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_vertical">
+
+    <CheckBox
+        android:id="@+id/toggleAcceleroDisabled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/toggleLeftHanded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleAcceleroDisabled"
+        android:layout_below="@+id/toggleAcceleroDisabled"
+        android:layout_marginTop="@dimen/settings_vertical_gap"/>
+
+    <com.parrot.freeflight.ui.controls.ParrotSeekBar
+        android:id="@+id/seekDeviceTiltMax"
+        android:layout_width="@dimen/settings_seek_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleLeftHanded"
+        android:layout_below="@+id/toggleLeftHanded" android:textSize="@dimen/settings_text_small_size"   
+        app:lowerBoundText="5"
+        app:upperBoundText="50"   
+    	app:lowerValuePaddingLeft="@dimen/settings_seek_bounds_value_padding"
+    	app:upperValuePaddingRight="@dimen/settings_seek_bounds_value_padding"
+        android:layout_marginTop="@dimen/settings_vertical_gap" android:layout_marginRight="@dimen/settings_pager_button_width"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/toggleAcceleroDisabled"
+        android:text="@string/JOYPAD_MODE" android:layout_marginRight="@dimen/settings_hor_gap"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/toggleLeftHanded"
+        android:text="@string/left_handed" android:layout_marginRight="@dimen/settings_hor_gap" android:layout_alignTop="@+id/toggleLeftHanded"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekDeviceTiltMax"
+        android:layout_toLeftOf="@+id/seekDeviceTiltMax"
+        android:text="@string/tilt_max" android:layout_marginRight="@dimen/settings_hor_gap"/>
+
+    <TextView
+        android:id="@+id/txtDeviceTiltMax"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:text="27.5" style="@style/SettingsTextView.Value" android:layout_marginTop="-5dp"/>
+
+</RelativeLayout>

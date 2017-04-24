@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.parrot.freeflight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/togglePairing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:checked="true" android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/settings_hor_gap"
+        android:layout_toLeftOf="@+id/togglePairing"
+        android:text="@string/pairing"/>
+
+    <EditText
+        android:id="@+id/editNetworkName"
+        android:layout_width="@dimen/settings_edit_network_name_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/togglePairing"
+        android:layout_toRightOf="@+id/textView1"
+        android:inputType="text"
+        android:text="@string/none" android:layout_marginTop="@dimen/settings_vertical_gap" android:focusableInTouchMode="false">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editNetworkName"
+        android:layout_alignBottom="@+id/editNetworkName"
+        android:layout_marginRight="@dimen/settings_hor_gap"
+        android:layout_toLeftOf="@+id/editNetworkName"
+        android:text="@string/network_name" />
+
+    <com.parrot.freeflight.ui.controls.ParrotSeekBar
+        android:id="@+id/seekInterfaceOpacity"
+        android:layout_width="@dimen/settings_seek_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNetworkName"
+        android:layout_below="@+id/editNetworkName"
+        android:layout_marginTop="@dimen/settings_vertical_gap"
+        app:lowerBoundText="0"
+        app:lowerValuePaddingLeft="@dimen/settings_seek_bounds_value_padding"
+        android:textSize="@dimen/settings_text_small_size"
+        app:upperBoundText="100"
+        app:upperValuePaddingRight="@dimen/settings_seek_bounds_value_padding" android:layout_marginRight="@dimen/settings_pager_button_width"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekInterfaceOpacity"
+        android:layout_marginRight="@dimen/settings_hor_gap"
+        android:layout_toLeftOf="@+id/seekInterfaceOpacity"
+        android:text="@string/interface_opacity" android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/textInterfaceOpacityValue"
+        style="@style/SettingsTextView.Value"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="-5dip"
+        android:text="50%" android:gravity="right|center_vertical"/>
+
+</RelativeLayout>

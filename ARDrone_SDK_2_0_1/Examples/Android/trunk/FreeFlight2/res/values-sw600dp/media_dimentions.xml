@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="photo_video_bar_text_size">15dp</dimen>
+    <dimen name="photo_video_white_separator_width">2dp</dimen>
+    <dimen name="photo_video_white_separator_height">20dp</dimen>
+    <dimen name="photo_video_white_separator_margin">20dp</dimen>
+    <dimen name="photo_video_bottom_bar_height">35dp</dimen>
+    <dimen name="photo_video_button_drawable_padding">4dip</dimen>
+    <dimen name="photo_video_button_drawable_margin">-20dip</dimen>
+    <dimen name="photo_video_select_image_padding">5dip</dimen>
+    <integer name="media_gallery_columns_count">6</integer>
+    <dimen name="media_screen_thumb_size">130dp</dimen>
+    <dimen name="media_screen_thumb_padding">4dp</dimen>
+    <dimen name="media_screen_filter_photo_video_width">62dp</dimen>
+    <dimen name="media_screen_filter_photo_width">31dp</dimen>
+</resources>

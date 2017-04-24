@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guest3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/InfosTextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/placeholder"
+        android:layout_marginLeft="39dp"
+        android:text="@string/Absolute_Control"
+        android:textAppearance="?android:attr/textAppearanceLarge" android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/placeholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ff2_guest_space_orange_bar" android:layout_marginTop="2dp" android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/InfosTextDescription"
+        android:layout_width="433dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:text="@string/absolute_control_description" />
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/hud_popup_width"
+        android:layout_height="@dimen/hud_popup_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hud_popup_margin_top"
+        android:background="#7F000000"
+        android:minHeight="@dimen/hud_popup_height"
+        android:minWidth="@dimen/hud_popup_width" >
+
+        <ImageButton
+            android:id="@+id/btnClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:src="@drawable/picto_close_window" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/barre_window" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/barre_window" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/picto_warning" android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txtMessage"
+            style="@style/HudPopupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView3"
+            android:text="@string/Your_video_is_being_processed_Please_do_not_close_application" android:lineSpacingMultiplier="1.2" android:layout_marginLeft="5dp" android:minLines="3"/>
+    </RelativeLayout>
+
+</FrameLayout>

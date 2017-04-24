@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.parrot.freeflight"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="80dip"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <com.parrot.freeflight.ui.controls.ParrotSeekBar
+        android:id="@+id/seekAltitudeLimit"
+        android:layout_width="@dimen/settings_seek_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/view1"
+        android:layout_below="@+id/view1"
+        android:progress="0"
+      
+        app:lowerBoundText="3"
+        app:upperBoundText="100"   
+        android:textSize="@dimen/settings_text_small_size"
+    	app:lowerValuePaddingLeft="@dimen/settings_seek_bounds_value_padding"
+    	app:upperValuePaddingRight="@dimen/settings_seek_bounds_value_padding"
+       android:layout_marginRight="@dimen/settings_pager_button_width"/>
+
+    <com.parrot.freeflight.ui.controls.ParrotSeekBar
+        android:id="@+id/seekVerticalSpeedMax"
+        android:layout_width="@dimen/settings_seek_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekAltitudeLimit"
+        android:layout_below="@+id/seekAltitudeLimit"
+        android:layout_marginTop="@dimen/settings_vertical_gap" 
+        
+        app:lowerBoundText="200"
+        app:upperBoundText="2000"   
+        android:textSize="@dimen/settings_text_small_size"
+    	app:lowerValuePaddingLeft="@dimen/settings_seek_bounds_value_padding"
+    	app:upperValuePaddingRight="@dimen/settings_seek_bounds_value_padding"
+    	android:layout_marginRight="@dimen/settings_pager_button_width"/>
+
+    <com.parrot.freeflight.ui.controls.ParrotSeekBar
+        android:id="@+id/seekYawSpeedMax"
+        android:layout_width="@dimen/settings_seek_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekVerticalSpeedMax"
+        android:layout_below="@+id/seekVerticalSpeedMax"
+        android:layout_marginTop="@dimen/settings_vertical_gap" 
+        
+        app:lowerBoundText="40"
+        app:upperBoundText="350"   
+        android:textSize="@dimen/settings_text_small_size"
+    	app:lowerValuePaddingLeft="@dimen/settings_seek_bounds_value_padding"
+    	app:upperValuePaddingRight="@dimen/settings_seek_bounds_value_padding"
+        android:layout_marginRight="@dimen/settings_pager_button_width"/>
+
+    <com.parrot.freeflight.ui.controls.ParrotSeekBar
+        android:id="@+id/seekTiltMax"
+        android:layout_width="@dimen/settings_seek_width"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekYawSpeedMax"
+        android:layout_below="@+id/seekYawSpeedMax"
+        android:layout_marginTop="@dimen/settings_vertical_gap" 
+        
+        app:lowerBoundText="5"
+        app:upperBoundText="30"   
+        android:textSize="@dimen/settings_text_small_size"
+    	app:lowerValuePaddingLeft="@dimen/settings_seek_bounds_value_padding"
+    	app:upperValuePaddingRight="@dimen/settings_seek_bounds_value_padding"
+        android:layout_marginRight="@dimen/settings_pager_button_width"/>
+
+    <TextView
+        android:id="@+id/labelAltitudeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/settings_hor_gap"
+        android:layout_toLeftOf="@+id/seekAltitudeLimit"
+        android:text="@string/altitude_limit" android:layout_alignTop="@+id/seekAltitudeLimit" android:lines="1" android:ellipsize="marquee"/>
+
+    <TextView
+        android:id="@+id/labelVerticalSpeedMax"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekVerticalSpeedMax"
+        android:layout_toLeftOf="@+id/seekVerticalSpeedMax"
+        android:text="@string/vertical_speed_max" android:layout_marginRight="@dimen/settings_hor_gap" android:ellipsize="marquee"/>
+
+    <TextView
+        android:id="@+id/labelYawSpeedMax"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekYawSpeedMax"
+        android:layout_toLeftOf="@+id/seekYawSpeedMax"
+        android:text="@string/yaw_speed_max" android:layout_marginRight="@dimen/settings_hor_gap" android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever" android:focusableInTouchMode="true"/>
+
+    <TextView
+        android:id="@+id/labelTiltMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/seekTiltMax"
+        android:layout_toLeftOf="@+id/seekTiltMax"
+        android:text="@string/tilt_angle_max" android:layout_marginRight="@dimen/settings_hor_gap" android:lines="1" android:ellipsize="marquee"/>
+
+    <TextView
+        android:id="@+id/txtAltitudeLimit"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/labelAltitudeLimit"
+        android:layout_below="@+id/labelAltitudeLimit"
+        android:text="3 m" style="@style/SettingsTextView.Value" android:layout_marginTop="-5dp"/>
+
+    <TextView
+        android:id="@+id/txtVerticalSpeedMax"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/labelVerticalSpeedMax"
+        android:layout_below="@+id/labelVerticalSpeedMax"
+        android:text="1100 mm/s" style="@style/SettingsTextView.Value" android:layout_marginTop="-5dp"/>
+
+    <TextView
+        android:id="@+id/txtYawSpeedMax"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/labelYawSpeedMax"
+        android:layout_below="@+id/labelYawSpeedMax"
+        android:text="200 /s" style="@style/SettingsTextView.Value" android:layout_marginTop="-5dp"/>
+
+    <TextView
+        android:id="@+id/txtTiltMax"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignRight="@+id/labelTiltMax"
+        android:layout_below="@+id/labelTiltMax"
+        android:text="17.5" style="@style/SettingsTextView.Value" android:layout_marginTop="-5dp"/>
+
+    <CheckBox
+        android:id="@+id/toggleOutdoorHull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seekTiltMax"
+        android:layout_below="@+id/seekTiltMax"
+        android:layout_marginTop="@dimen/settings_vertical_gap"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/toggleOutdoorHull"
+        android:text="@string/outdoor_hull" android:layout_marginRight="@dimen/settings_hor_gap" android:lines="1" android:ellipsize="marquee" android:layout_alignTop="@+id/toggleOutdoorHull"/>
+
+    <CheckBox
+        android:id="@+id/toggleOutdoorFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/toggleOutdoorHull"
+        android:layout_below="@+id/toggleOutdoorHull"
+        android:layout_marginTop="@dimen/settings_vertical_gap"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/toggleOutdoorFlight"
+        android:text="@string/outdoor_flight" android:layout_marginRight="@dimen/settings_hor_gap" android:ellipsize="marquee" android:layout_alignTop="@+id/toggleOutdoorFlight"/>
+
+</RelativeLayout>

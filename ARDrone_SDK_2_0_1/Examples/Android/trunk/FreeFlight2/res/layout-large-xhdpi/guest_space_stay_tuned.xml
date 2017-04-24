@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+    
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/InfosTextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="66dp"
+        android:text="@string/Stay_Tuned" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="720dp"
+        android:layout_height="2dp"
+        android:layout_alignBaseline="@+id/textView1"
+        android:src="@drawable/horizontal_bar"/>
+
+    <ImageView
+        android:id="@+id/imageWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ff2_guest_web" />
+
+    <TextView
+        android:id="@+id/textUrlWeb"
+        style="@style/InfosTextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageWeb"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/imageWeb"
+        android:text="@string/Ardrone_com" />
+
+    <ImageView
+        android:id="@+id/imageNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageWeb"
+        android:layout_marginLeft="235dp"
+        android:layout_toRightOf="@+id/imageWeb"
+        android:src="@drawable/ff2_guest_mail" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/arrow_right_orange" />
+
+    <TextView
+        android:id="@+id/textView6"
+        style="@style/InfosTextLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageWeb"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="43dp"
+        android:text="@string/Join_Our_Community" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="155dp"
+        android:src="@drawable/arrow_right_orange" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="720dp"
+        android:layout_height="2dp"
+        android:layout_alignBaseline="@+id/textView6"
+        android:src="@drawable/horizontal_bar" />
+
+    <ImageView
+        android:id="@+id/imageFacebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ff2_guest_facebook" />
+
+    <TextView
+        android:id="@+id/textFacebook"
+        style="@style/InfosTextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageFacebook"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/imageFacebook"
+        android:text="@string/Facebook" />
+
+    <TextView
+        android:id="@+id/textLike"
+        style="@style/InfosTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/textFacebook"
+        android:layout_below="@+id/textFacebook"
+        android:drawableLeft="@drawable/ff2_guest_plus"
+        android:drawablePadding="5dp"
+        android:text="@string/Like" android:layout_marginTop="-16dp" android:lineSpacingMultiplier="1" android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/imageTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageFacebook"
+        android:layout_alignLeft="@+id/imageNews"
+        android:src="@drawable/ff2_guest_twitter" />
+
+    <TextView
+        android:id="@+id/textTwitter"
+        style="@style/InfosTextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageTwitter"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/imageTwitter"
+        android:text="@string/Twitter" />
+
+    <TextView
+        android:id="@+id/textFollowUp"
+        style="@style/InfosTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/textTwitter"
+        android:layout_below="@+id/textTwitter"
+        android:drawableLeft="@drawable/ff2_guest_plus"
+        android:drawablePadding="5dp"
+        android:text="@string/Follow_up" android:layout_marginTop="-16dp" android:lineSpacingMultiplier="1" android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/textWeb"
+        style="@style/InfosTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/textUrlWeb"
+        android:layout_below="@+id/textUrlWeb"
+        android:drawableLeft="@drawable/ff2_guest_plus"
+        android:drawablePadding="5dp"
+        android:text="@string/Go_to_web_site" android:layout_marginTop="-16dp" android:lineSpacingMultiplier="1" android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/textNews"
+        style="@style/InfosTextMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageNews"
+        android:layout_toRightOf="@+id/imageNews"
+        android:text="@string/Newsletter" android:layout_marginLeft="10dp" android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/textSignUp"
+        style="@style/InfosTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/textNews"
+        android:layout_below="@+id/textNews"
+        android:drawableLeft="@drawable/ff2_guest_plus"
+        android:drawablePadding="5dp"
+        android:text="@string/Sign_up" android:layout_marginTop="-16dp" android:lineSpacingMultiplier="1" android:gravity="center_vertical"/>
+
+</RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photos_videos">写真／ビデオ</string>
+    <string name="sort">種類: </string>
+     <string name="edit">EDIT</string> <!-- not found -->
+    <string name="select_all">SELECT ALL</string>  <!-- not found -->
+    <string name="delete">削除する</string>
+    <string name="cancel_capit">キャンセル</string>
+    <string name="clear_all">CLEAR ALL</string>  <!-- not found -->
+    <string name="delete_popup">このメディアを削除しますか？</string>
+    <string name="delete_media">メディアを削除する</string>
+    <string name="share_capit">投稿する</string> 
+    <string name="share">投稿する</string>
+    <string name="of">中</string>
+
+</resources>

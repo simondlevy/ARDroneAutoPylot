@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="InfosTextLarge" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">46sp</item>
+        <item name="android:textColor">#000000</item> 
+    </style>
+    
+    <style name="InfosTextMedium" parent="@android:style/Widget.TextView">
+   	  	<item name="android:textSize">31sp</item>
+        <item name="android:textColor">#000000</item> 
+    </style>
+    
+    <style name="InfosTextDescription" parent="@android:style/Widget.TextView"> 
+    	<item name="android:textSize">24sp</item>
+    	<item name="android:textColor">@color/stay_tuned_text_selector</item>
+    	<item name="android:lineSpacingMultiplier">1.42</item>
+    </style>
+    
+    <style name="InfosTextDescription.SuperStable"> 
+    	<item name="android:textSize">@dimen/guest_space_super_stable_description_text_size</item>
+    </style>
+    
+</resources>

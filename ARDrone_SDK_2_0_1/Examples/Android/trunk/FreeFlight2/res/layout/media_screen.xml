@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:alwaysDrawnWithCache="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_preferences"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/incl_status_bar" />
+
+    <include
+        android:id="@+id/navigation_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/settings_header_height"
+        layout="@layout/incl_action_bar" />
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:listSelector="@null"
+        android:numColumns="6"
+        android:padding="3dp"
+        android:stretchMode="columnWidth"
+        tools:listitem="@layout/item_image" >
+    </GridView>
+
+    <LinearLayout
+        android:id="@+id/llayBrowseBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/photo_video_bottom_bar_height"
+        android:background="@drawable/black"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/PhotoVideoText"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/orange_bar_title_text_margin"
+            android:text="@string/sort" 
+            android:lineSpacingExtra="0dp"
+            android:lineSpacingMultiplier="1"
+            />
+
+        <RadioGroup
+            android:id="@+id/filter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbtn_all"
+                style="@style/MediaGallery.FilterPhotoVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/photo_video_white_separator_margin"
+                android:layout_marginRight="@dimen/photo_video_white_separator_margin"
+                android:checked="true" />
+
+            <ImageView
+                android:layout_width="@dimen/photo_video_white_separator_width"
+                android:layout_height="@dimen/photo_video_white_separator_height"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbtn_images"
+                style="@style/MediaGallery.FilterPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/photo_video_white_separator_margin"
+                android:layout_marginRight="@dimen/photo_video_white_separator_margin" />
+
+            <ImageView
+                android:layout_width="@dimen/photo_video_white_separator_width"
+                android:layout_height="@dimen/photo_video_white_separator_height"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbtn_videos"
+                style="@style/MediaGallery.FilterVideo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/photo_video_white_separator_margin"
+                android:layout_marginRight="@dimen/photo_video_white_separator_margin" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="@style/PhotoVideoGreyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llayEditBar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/photo_video_bottom_bar_height"
+        android:background="@drawable/black"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnSelectClear"
+            style="@style/PhotoVideoGreyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/select_all" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dip"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/PhotoVideoActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/photo_video_button_drawable_margin"
+            android:drawableLeft="@drawable/btn_delete"
+            android:drawablePadding="@dimen/photo_video_button_drawable_padding"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/PhotoVideoActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="@dimen/photo_video_button_drawable_margin"
+            android:drawableLeft="@drawable/btn_cancel"
+            android:drawablePadding="@dimen/photo_video_button_drawable_padding"
+            android:text="@string/cancel_capit" />
+    </LinearLayout>
+
+</LinearLayout>

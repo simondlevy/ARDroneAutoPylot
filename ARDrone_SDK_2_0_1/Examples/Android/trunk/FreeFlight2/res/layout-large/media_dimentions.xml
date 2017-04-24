@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="media_screen_filter_photo_video_width">62dp</dimen>
+    <dimen name="media_screen_filter_photo_width">31dp</dimen>
+</resources>

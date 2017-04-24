@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="photos_videos">PHOTOS / VIDÉOS</string>
+    <string name="sort">TRIER: </string>
+     <string name="edit">EDIT</string> <!-- not found -->
+    <string name="select_all">SELECT ALL</string>  <!-- not found -->
+    <string name="delete">SUPPRIMER</string>
+    <string name="cancel_capit">ANNULER</string>
+    <string name="clear_all">CLEAR ALL</string>  <!-- not found -->
+    <string name="delete_popup">Voulez-vous supprimer cet élément ?</string>
+    <string name="delete_media">Supprimer l\'élément</string>
+    <string name="share_capit">PARTAGER</string> 
+    <string name="share">Partager</string>
+    <string name="of">sur</string>
+
+</resources>

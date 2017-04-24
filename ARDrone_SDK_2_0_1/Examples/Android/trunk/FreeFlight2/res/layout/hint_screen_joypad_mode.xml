@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgHintContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:scrollY="-10dp"
+        android:src="@drawable/tips_00_joypad" >
+    </ImageView>
+
+    <include
+        android:id="@+id/linearLayout1_ref"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_header_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/tips_header" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/HintTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hint_screen_title_height"
+        android:layout_below="@+id/linearLayout1_ref"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hint_screen_title_margin_top"
+        android:text="@string/JOYPAD_MODE" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/barre_window" />
+
+    <LinearLayout
+        android:id="@+id/bottomText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hint_screen_description_height"
+            android:text="@string/OFF_TILT_YOUR_DEVICE_TO_CONTROL_THE_ARDRONE" android:layout_weight="1" style="@style/HintTextDescription"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/hint_screen_description_height"
+            android:text="@string/ON_MOVE_YOUR_LEFT_THUMB_ON_THE_SCREEN_TO_CONTROL_THE_ARDRONE" android:layout_weight="1" style="@style/HintTextDescription"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ParrotSeekBar">
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="lowerValuePaddingLeft" format="dimension" />
+        <attr name="upperValuePaddingRight" format="dimension" />
+        <attr name="upperBoundText" format="string" />
+        <attr name="lowerBoundText" format="string" />
+        <attr name="textPaddingTop" format="dimension" />
+    </declare-styleable>    
+    <declare-styleable name="ImageStickView_Layout">
+        <attr name="layout_anchorTop" format="integer" />
+        <attr name="layout_anchorLeft" format="integer" />
+        <attr name="layout_anchorRight" format="integer" />
+        <attr name="layout_anchorBottom" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ImageStickView">
+        <attr name="baseViewId" format="reference" />
+    </declare-styleable>
+
+</resources>

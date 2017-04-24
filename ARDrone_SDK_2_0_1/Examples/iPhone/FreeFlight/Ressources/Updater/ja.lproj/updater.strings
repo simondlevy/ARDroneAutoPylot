@@ -1,0 +1,31 @@
+/* 
+  updater.strings
+  FreeFlight
+
+  Created by Frederic D'Haeyer on 12/12/11.
+  Copyright 2011 Parrot SA. All rights reserved.
+*/
+
+"Checking / Repairing" = "確認中／復元中";
+"Sending file" = "ファイル送信中";
+"Installing" = "インストール中";
+"Restarting the AR.Drone" = "AR.Droneを再起動してください";
+"Please restart the AR.Drone" = "AR.Droneを再起動中";
+"Trying to connect to the AR.Drone" = "AR.Droneへの接続を確立中";
+"Wi-Fi not available, please connect your %@ to your AR.Drone" = "Wi-Fiが未接続です。%@をAR.Droneに接続してください";
+"AR.Drone firmware %@\n%@\n%@" = "AR.Droneファームウェア %@\n%@\n%@";
+"Update file sent successfully. Please restart the AR.Drone" = "更新ファイルが送信されました\nAR.Droneを再起動してください";
+"If AR.Drone led is green, reset the Wi-Fi connection" = "AR.DroneのLEDランプが緑色になったら、Wifi接続を切り、再度接続てください";
+"Checking / Updating bootloader" = "チェック／アップデート　ブートローダー";
+
+
+
+
+
+
+
+
+
+
+
+

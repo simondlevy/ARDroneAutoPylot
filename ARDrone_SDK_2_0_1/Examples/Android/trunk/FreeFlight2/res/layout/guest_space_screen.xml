@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:id="@+id/guestSpaceRoot">
+    
+    <include
+        android:id="@+id/header_preferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/incl_status_bar" android:layout_alignParentTop="true"/>
+
+    <include
+        android:id="@+id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_header_height"
+        layout="@layout/incl_action_bar" android:layout_below="@id/header_preferences"/>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/guest_space_informations" android:id="@+id/content" android:layout_below="@id/navigation_bar" android:layout_marginBottom="@dimen/guest_space_bottom_buttons_height"/>
+
+         <RadioGroup
+            android:id="@+id/bottomBar"
+            android:layout_width="fill_parent"
+        	android:layout_height="@dimen/guest_space_bottom_buttons_height" 
+            android:orientation="horizontal"
+           android:layout_alignParentBottom="true">
+
+            <RadioButton
+                android:id="@+id/rbInformations"
+                style="@style/GuestSpaceSwitchButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:text="@string/INFORMATIONS" android:gravity="center" android:drawableLeft="@drawable/informations"/>
+
+            <RadioButton
+                android:id="@+id/rbUserVideos"
+                style="@style/GuestSpaceSwitchButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="@string/USERS_VIDEOS" android:lines="2" android:drawableLeft="@drawable/uservideos" android:button="@null"/>
+
+            <RadioButton
+                android:id="@+id/rbStayTuned"
+                style="@style/GuestSpaceSwitchButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/staytuned"
+                android:text="@string/STAY_TUNED" android:gravity="center"/>
+
+            <RadioButton
+                android:id="@+id/rbWheretoBuy"
+                style="@style/GuestSpaceSwitchButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableLeft="@drawable/wheretobuy"
+                android:text="@string/WHERE_TO_BUY" android:gravity="center"/>
+        </RadioGroup>
+</RelativeLayout>

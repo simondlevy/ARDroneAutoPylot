@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgHintContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/tips_10_geolocation" >
+    </ImageView>
+
+    <include
+        android:id="@+id/linearLayout1_ref"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/settings_header_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        layout="@layout/tips_header" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/HintTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hint_screen_title_height"
+        android:layout_below="@+id/linearLayout1_ref"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hint_screen_title_margin_top"
+        android:text="@string/GEOLOCATION"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/barre_window" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/HintTextDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hint_screen_description_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/ACTIVATE_LOCATION_SERVICES_TO_GEOLOCATE_THE_FLIGHTS" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

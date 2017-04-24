@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="firmware_curr_step_title_margin_top">100dp</dimen>
+    <dimen name="firmware_progress_bar_margin_top">5dp</dimen>
+    <dimen name="firmware_message_margin_top">1dp</dimen>
+    <dimen name="firmware_progress_bar_width">400dp</dimen>
+    <dimen name="firmware_curr_step_font_size">31sp</dimen>
+   	<dimen name="firmware_text_font_size">28sp</dimen>
+   	<dimen name="firmware_steps_font_size">24sp</dimen>
+    <dimen name="firmware_steps_vertical_margin">5dp</dimen>
+    <dimen name="firmware_steps_margin_bottom">96dp</dimen>
+	<dimen name="firmware_steps_margin_left">160dp</dimen> 
+</resources>

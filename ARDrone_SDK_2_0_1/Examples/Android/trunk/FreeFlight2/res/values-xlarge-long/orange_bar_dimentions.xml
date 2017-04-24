@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="orange_bar_title_text_size">32sp</dimen>
+    <dimen name="orange_bar_title_text_margin">32dp</dimen>
+
+</resources>

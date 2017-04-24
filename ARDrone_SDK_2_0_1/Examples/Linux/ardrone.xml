@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ardrone>
+  <devices>
+    <device id="0" name="Keyboard" default="yes">
+      <controls>
+        <control name="takeoff" value="13" type="0"/>
+        <control name="emergency" value="32" type="0"/>
+        <control name="pitch_front" value="65362" type="0"/>
+        <control name="pitch_back" value="65364" type="0"/>
+        <control name="roll_left" value="81" type="0"/>
+        <control name="roll_right" value="68" type="0"/>
+        <control name="yaw_left" value="65361" type="0"/>
+        <control name="yaw_right" value="65363" type="0"/>
+        <control name="speed_up" value="90" type="0"/>
+        <control name="speed_down" value="88" type="0"/>
+      </controls>
+    </device>
+  </devices>
+</ardrone>

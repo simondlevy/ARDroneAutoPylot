@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guest2"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="71dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/HD_camera"
+        android:layout_marginTop="90dp" android:layout_marginLeft="89dp" style="@style/InfosTextLarge" android:layout_marginBottom="4dp" android:gravity="center_vertical"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ff2_guest_space_orange_bar"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="446dp"
+        android:layout_height="187dp"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_below="@+id/imageView2"
+        android:text="@string/hd_camera_description"
+        android:layout_marginTop="4dp" style="@style/InfosTextDescription" android:textSize="31sp" android:gravity="center_vertical"/>
+
+</RelativeLayout>

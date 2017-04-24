@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guest_space_bottom_buttons_text_size">10sp</dimen>
+    <dimen name="guest_space_bottom_buttons_padding">1dp</dimen>
+    <dimen name="guest_space_super_stable_description_text_size">13sp</dimen>
+    <dimen name="guest_space_super_stable_description_text_lineSpacingExtra">5dp</dimen>
+</resources>

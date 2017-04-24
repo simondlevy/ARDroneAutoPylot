@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription" severity="informational">
+        <ignore path="res/layout-xlarge/guest_space_stay_tuned.xml" />
+        <ignore path="res/layout/guest_space_informations_page_share.xml" />
+    </issue>
+    <issue id="MissingTranslation" severity="ignore" />
+</lint>

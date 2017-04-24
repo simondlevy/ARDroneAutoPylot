@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="hint_screen_progress_padding">8dp</dimen> 
+    <dimen name="hint_screen_loading_label_padding_left">48dp</dimen>
+    <dimen name="hint_screen_loading_label_padding_right">8dp</dimen>
+    
+    <dimen name="hint_screen_title_height">64dp</dimen>
+    <dimen name="hint_screen_title_margin_top">26dp</dimen>
+    <dimen name="hint_screen_title_text_size">46sp</dimen>
+    <dimen name="hint_screen_description_height">120dp</dimen>
+    <dimen name="hint_screen_description_text_size">24sp</dimen>
+    <dimen name="hint_screen_description_padding_top">8dp</dimen>
+</resources>

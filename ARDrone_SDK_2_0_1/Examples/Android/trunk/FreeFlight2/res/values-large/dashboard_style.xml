@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+<style name="dashboardLogo">
+    <item name="android:scrollY">0dp</item>
+    <item name="android:scaleType">fitCenter</item>
+</style>
+
+<style name="dashboardLabelVersion">
+    <item name="android:textColor">#FF000000</item>
+    <item name="android:textSize">18sp</item>
+</style>
+
+<style name="dashboardButton" parent="@style/dashboardButtonBase">
+    <item name="android:textSize">38sp</item>
+    <item name="android:paddingRight">6dip</item>
+    <item name="android:paddingBottom">0dp</item>
+    <item name="android:lineSpacingExtra">@dimen/dashboard_button_line_spacing</item>
+</style>
+
+<style name="dashboardButton.Error">
+    <item name="android:background">@drawable/dashboard_color_light</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:gravity">center</item>
+    <item name="android:textColor">#FF777777</item>
+    <item name="android:shadowColor">#FFBBBBBB</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+    <item name="android:padding">4dip</item>
+</style>
+    
+</resources>
