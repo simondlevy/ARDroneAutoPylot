@@ -38,10 +38,8 @@ Logitech Extreme 30 Pro joystick</a> or
 
 <a href="http://www.amazon.com/Nyko-Core-Controller-Color-Playstation-3/dp/B003G2Z4FK">
 Playstation PS3 controller</a>, the only file you should need to 
-modify immediately in the repository is the <b>autopylot.makefile</b>, whose first non-commented 
-lines you should change to reflect 
-where you put the AR.Drone SDK. You should also modify the lines right below there that
-specify which kind of controller you have and its hexadecimal ID (which
+modify immediately in the repository is the <b>autopylot.makefile</b>, 
+to specify which kind of controller you have and its hexadecimal ID (which
 you can find by issuing the <b>lsusb</b> command in Linux).
 If you have some other kind of gamepad, like a Nintendo Wii, 
 you'll have to modify <b>autopylot_gamepad.c</b> to reflect this.  If you're
