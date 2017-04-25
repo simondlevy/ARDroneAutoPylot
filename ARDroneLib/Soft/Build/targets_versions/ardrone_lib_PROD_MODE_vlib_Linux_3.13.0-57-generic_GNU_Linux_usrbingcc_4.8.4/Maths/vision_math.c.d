@@ -13,8 +13,8 @@ vision_math.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/vision_math.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/maths.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/vision_math.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/maths.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -30,4 +30,4 @@ vision_math.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/matrices.h
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/matrices.h

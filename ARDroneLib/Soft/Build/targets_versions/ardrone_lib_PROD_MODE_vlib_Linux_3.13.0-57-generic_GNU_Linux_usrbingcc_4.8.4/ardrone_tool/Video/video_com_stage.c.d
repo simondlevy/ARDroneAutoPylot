@@ -1,6 +1,6 @@
 video_com_stage.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-57-generic_GNU_Linux_usrbingcc_4.8.4/ardrone_tool/Video/video_com_stage.c.d: ../..//Soft/Lib/ardrone_tool/Video/video_com_stage.c \
  /usr/include/stdc-predef.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Common/config.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Common/config.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -15,7 +15,7 @@ video_com_stage.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_L
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  ../VP_Os/linux/intrin.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Common/generated_custom.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Common/generated_custom.h \
  ../VP_Os/vp_os_print.h /usr/include/stdio.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
@@ -44,7 +44,7 @@ video_com_stage.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_L
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h ../VP_Os/vp_os_delay.h \
  ../VP_Os/vp_os_assert.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_com_stage.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_com_stage.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \

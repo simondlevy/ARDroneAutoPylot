@@ -40,7 +40,7 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h \
  ..//VP_Os/linux/vp_os_signal_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
@@ -88,9 +88,9 @@ video_stage_ffmpeg_decoder.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_
  ../../FFMPEG/Includes/libavutil/log.h \
  ../../FFMPEG/Includes/libavformat/version.h \
  ../../FFMPEG/Includes/libswscale/swscale.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/time.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/time.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Common/video_encapsulation.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Common/video_encapsulation.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h /usr/include/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl.h \

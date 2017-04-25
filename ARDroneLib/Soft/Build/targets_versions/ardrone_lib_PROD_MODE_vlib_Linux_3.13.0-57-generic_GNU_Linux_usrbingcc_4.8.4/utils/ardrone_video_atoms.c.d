@@ -29,7 +29,7 @@ ardrone_video_atoms.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vl
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Common/video_encapsulation.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Common/video_encapsulation.h \
  /usr/include/dirent.h /usr/include/x86_64-linux-gnu/bits/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \

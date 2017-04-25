@@ -4,8 +4,8 @@ quaternions.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/quaternions.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/matrices.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/quaternions.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/matrices.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -16,7 +16,7 @@ quaternions.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  ../VP_Os/linux/intrin.h \
- /home/levys/Software/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/maths.h \
+ /home/levys/Desktop/ARDroneAutoPylot/ARDroneLib//Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
