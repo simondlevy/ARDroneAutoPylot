@@ -18,9 +18,8 @@ If you're interested in a more graphical-interface approach, you might also look
 <a href="http://www.urbiforge.org/index.php/Projects/Urbi4ARDrone">URBI</a> or 
 <a href="http://www.willowgarage.com/pages/software/ros-platform">ROS</a>.
 
-<b>Please note that I am only supporting this project on 64-bit Ubuntu, using the latest SDK and firmware 
-from Parrot (currently SDK 2.0.1).</b> I do not have the resources to support other OSs or backward 
-compatibility. 
+<b>Please note that I am only supporting this project on 64-bit Ubuntu.
+I do not have the resources to support other OSs.
 
 <a name="Getting_Started"> 
 
