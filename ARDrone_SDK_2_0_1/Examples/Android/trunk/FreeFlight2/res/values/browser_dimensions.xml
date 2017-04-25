@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <dimen name="browser_screen_arrow_left_padding">10dp</dimen>
-    <dimen name="browser_screen_arrow_right_padding">15dp</dimen>
-     <dimen name="browser_screen_bar_right_padding">10dp</dimen>
-
-</resources>

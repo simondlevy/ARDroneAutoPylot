@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="settings_header_height">38dp</dimen>
-    <dimen name="settings_header_text_size">28sp</dimen>  
-</resources>

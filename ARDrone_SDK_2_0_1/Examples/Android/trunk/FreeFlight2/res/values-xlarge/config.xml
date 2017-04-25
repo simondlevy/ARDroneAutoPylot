@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="bool" name="settings_pause_video_when_opened" format="boolean">true</item>
-</resources>

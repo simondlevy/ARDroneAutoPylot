@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="hint_screen_progress_padding">10dp</dimen>
-    <dimen name="hint_screen_title_height">80dp</dimen>
-    <dimen name="hint_screen_title_margin_top">32dp</dimen>
-    <dimen name="hint_screen_title_text_size">58sp</dimen>
-    <dimen name="hint_screen_description_height">150dp</dimen>
-    <dimen name="hint_screen_description_text_size">30sp</dimen>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="hud_popup_width">720dp</dimen>
-    <dimen name="hud_popup_height">170dp</dimen>
-    <dimen name="hud_popup_text_size">28sp</dimen>
-</resources>

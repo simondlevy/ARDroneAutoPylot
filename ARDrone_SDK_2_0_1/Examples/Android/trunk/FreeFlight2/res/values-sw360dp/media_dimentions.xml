@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-     <dimen name="media_screen_thumb_size">95dp</dimen>
-     <item type="integer" name="media_gallery_columns_count" format="integer">6</item>
-</resources>

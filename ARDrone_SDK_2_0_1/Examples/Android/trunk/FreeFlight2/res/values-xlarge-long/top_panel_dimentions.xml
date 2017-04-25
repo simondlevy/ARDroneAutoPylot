@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="top_panel_text_margin_left">8dp</dimen>
-    <dimen name="top_panel_height">25dp</dimen>
-    <dimen name="top_panel_text_size">13sp</dimen> 
-</resources>
