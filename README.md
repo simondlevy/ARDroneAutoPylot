@@ -19,7 +19,7 @@ If you're interested in a more graphical-interface approach, you might also look
 <a href="http://www.willowgarage.com/pages/software/ros-platform">ROS</a>.
 
 <b>Please note that I am only supporting this project on 64-bit Ubuntu.
-I do not have the resources to support other OSs.
+I do not have the resources to support other OSs.</b>
 
 <a name="Getting_Started"> 
 
