@@ -25,6 +25,8 @@
 
 include autopylot.makefile
 
+SDK_DIR:=$(shell pwd)/ARDrone_SDK_2_0_1
+
 GENERIC_CFLAGS+=-D$(GAMEPAD)
 
 SDK_PATH=$(SDK_DIR)/ARDroneLib/

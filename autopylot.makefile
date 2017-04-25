@@ -20,10 +20,6 @@
 # and
 #   <https://projects.ardrone.org/attachments/278/ParrotCopyrightAndDisclaimer.txt>.
 
-# This should reflect where you put the SDK
-#SDK_DIR:=/home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1
-SDK_DIR:=$(shell pwd)/ARDrone_SDK_2_0_1
-
 # We currently support LOGITCH and PS3 gamepads
 #GAMEPAD = GAMEPAD_LOGITECH_ID=0x046dc215
 GAMEPAD = GAMEPAD_PS3_ID=0x0e8f0003
