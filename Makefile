@@ -27,8 +27,6 @@ include autopylot.makefile
 
 GENERIC_CFLAGS+=-D$(GAMEPAD)
 
-SDK_DIR:=$(shell pwd)/ARDrone_SDK_2_0_1
-
 SDK_PATH=$(SDK_DIR)/ARDroneLib/
 
 ARDRONE_TARGET_DIR=$(shell pwd)
@@ -94,9 +92,8 @@ all: build_libs $(TARGET)
 
 $(TARGET):
 	echo $(GENERIC_CFLAGS)
-	echo $(GENERIC_INCLUDES)
-	#@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
-	#rm -f sym_$(TARGET)
+	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
+	rm -f sym_$(TARGET)
 
 $(MAKECMDGOALS): build_libs
 	@$(MAKE) -C $(SDK_PATH)/VP_SDK/Build $(TMP_SDK_FLAGS) $(SDK_FLAGS) $(MAKECMDGOALS) USE_LINUX=yes
