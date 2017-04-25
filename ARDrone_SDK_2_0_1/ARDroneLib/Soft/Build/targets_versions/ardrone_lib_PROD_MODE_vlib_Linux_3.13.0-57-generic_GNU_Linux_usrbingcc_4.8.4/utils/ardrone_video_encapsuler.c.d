@@ -25,7 +25,7 @@ ardrone_video_encapsuler.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MO
  /usr/include/x86_64-linux-gnu/bits/timex.h /usr/include/xlocale.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/video_encapsulation.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/video_encapsulation.h \
  /usr/include/inttypes.h /usr/include/stdio.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
@@ -37,7 +37,7 @@ ardrone_video_encapsuler.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MO
  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h ../..//Soft/Lib/utils/ardrone_video_atoms.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/ardrone_version.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/ardrone_version.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \

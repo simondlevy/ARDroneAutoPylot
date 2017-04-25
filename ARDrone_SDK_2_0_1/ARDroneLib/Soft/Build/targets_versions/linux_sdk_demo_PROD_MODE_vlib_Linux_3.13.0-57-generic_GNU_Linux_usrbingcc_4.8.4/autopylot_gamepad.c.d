@@ -60,8 +60,8 @@ autopylot_gamepad.o ../../Soft/Build/targets_versions/linux_sdk_demo_PROD_MODE_v
  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_api.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_common_config.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_api.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_common_config.h \
  ../ATcodec/ATcodec_api.h ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h \
  ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
@@ -83,11 +83,11 @@ autopylot_gamepad.o ../../Soft/Build/targets_versions/linux_sdk_demo_PROD_MODE_v
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_common.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/generated_custom.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/vision_common.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_common.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/generated_custom.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/vision_common.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
@@ -97,11 +97,11 @@ autopylot_gamepad.o ../../Soft/Build/targets_versions/linux_sdk_demo_PROD_MODE_v
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_keys.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/quaternions.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/led_animation.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_keys.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/quaternions.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/led_animation.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
  ../../VLIB/../VLIB/video_codec.h ../../VLIB/../VLIB/video_controller.h \
  ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \
@@ -119,15 +119,15 @@ autopylot_gamepad.o ../../Soft/Build/targets_versions/linux_sdk_demo_PROD_MODE_v
  ../../VLIB/../VLIB/video_picture_defines.h \
  ../../VLIB/../VLIB/video_gob.h ../../VLIB/../VLIB/video_macroblock.h \
  ../../VLIB/../VLIB/P264/p264_common.h ../VP_Os/vp_os_print.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/UI/ardrone_input.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/ardrone_tool.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/academy_common.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/UI/ardrone_input.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/ardrone_tool.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/academy_common.h \
  /home/levys/Software/ARDroneAutoPylot/ardrone_autopylot.h \
  /home/levys/Software/ARDroneAutoPylot/autopylot_agent.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_client.h \
  ../VP_Api/vp_api_thread_helper.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_navdata_handler.h
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Control/ardrone_navdata_control.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_navdata_file.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_general_navdata.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Navdata/ardrone_academy_navdata.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_navdata_handler.h

@@ -9,7 +9,7 @@ iniparser.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3
  /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/xlocale.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/iniparser3.0b/src/iniparser.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/iniparser3.0b/src/iniparser.h \
  /usr/include/stdio.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
@@ -33,20 +33,20 @@ iniparser.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3
  /usr/include/x86_64-linux-gnu/bits/string.h \
  /usr/include/x86_64-linux-gnu/bits/string2.h \
  /usr/include/x86_64-linux-gnu/bits/string3.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/iniparser3.0b/src/dictionary.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/iniparser3.0b/src/dictionary.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h ../VP_Os/vp_os_print.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ..//VP_Os/linux/vp_os_serial.h /usr/include/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h ../VP_Os/linux/intrin.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \

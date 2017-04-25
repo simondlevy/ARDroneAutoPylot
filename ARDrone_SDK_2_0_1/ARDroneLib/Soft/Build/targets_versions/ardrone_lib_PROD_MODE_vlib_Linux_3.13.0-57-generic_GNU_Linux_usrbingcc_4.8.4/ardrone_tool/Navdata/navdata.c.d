@@ -40,9 +40,9 @@ navdata.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.1
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_api.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_api.h \
  /usr/include/x86_64-linux-gnu/sys/time.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_common_config.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/ardrone_common_config.h \
  ../ATcodec/ATcodec_api.h ../VP_Os/vp_os_thread.h \
  ..//VP_Os/linux/vp_os_thread_dep.h /usr/include/pthread.h \
  /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
@@ -50,11 +50,11 @@ navdata.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.1
  /usr/include/x86_64-linux-gnu/bits/setjmp.h ../ATcodec/ATcodec.h \
  ../ATcodec/ATcodec_Memory.h ../ATcodec/ATcodec_Error.h \
  ../ATcodec/ATcodec_Tree.h ../ATcodec/ATcodec_Buffer.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_common.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/generated_custom.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/vision_common.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_common.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/generated_custom.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/vision_common.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
  /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/huge_val.h \
  /usr/include/x86_64-linux-gnu/bits/huge_valf.h \
  /usr/include/x86_64-linux-gnu/bits/huge_vall.h \
@@ -64,11 +64,11 @@ navdata.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.1
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_keys.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/quaternions.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/led_animation.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/navdata_keys.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/quaternions.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/led_animation.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
  ../../VLIB/video_codec.h ../../VLIB/video_controller.h \
  ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \

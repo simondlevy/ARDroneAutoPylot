@@ -11,7 +11,7 @@ config_keys.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
  /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/maths.h \
  ../VP_Os/vp_os_types.h ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
@@ -27,8 +27,8 @@ config_keys.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/float.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/Maths/matrices.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Common/config_keys.h \
  ../../VLIB/video_codec.h ../../VLIB/video_controller.h \
  ../VP_Api/vp_api_picture.h ../../FFMPEG/Includes/libavutil/avutil.h \
  ../../FFMPEG/Includes/libavutil/common.h /usr/include/ctype.h \

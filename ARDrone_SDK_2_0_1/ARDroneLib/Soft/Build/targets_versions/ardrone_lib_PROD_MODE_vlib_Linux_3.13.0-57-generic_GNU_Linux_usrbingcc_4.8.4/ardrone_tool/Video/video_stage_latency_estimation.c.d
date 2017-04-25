@@ -1,8 +1,8 @@
 video_stage_latency_estimation.o ../../Soft/Build/targets_versions/ardrone_lib_PROD_MODE_vlib_Linux_3.13.0-57-generic_GNU_Linux_usrbingcc_4.8.4/ardrone_tool/Video/video_stage_latency_estimation.c.d: \
  ../..//Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.c \
  /usr/include/stdc-predef.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_latency_estimation.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/vlib_stage_decode.h \
  ../VP_Api/vp_api.h ../VP_Os/vp_os_signal.h ../VP_Os/vp_os_types.h \
  ../VP_Os/vp_os.h ../VP_Os/vp_os_rtmon.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdint.h /usr/include/stdint.h \
@@ -82,8 +82,8 @@ video_stage_latency_estimation.o ../../Soft/Build/targets_versions/ardrone_lib_P
  ../../FFMPEG/Includes/libavutil/pixfmt.h ../../VLIB/video_picture.h \
  ../../VLIB/video_picture_defines.h ../../VLIB/video_gob.h \
  ../../VLIB/video_macroblock.h ../../VLIB/P264/p264_common.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
- /home/levys/Software/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_decoder.h \
+ /home/levys/Software/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib//Soft/Lib/ardrone_tool/Video/video_stage_ffmpeg_decoder.h \
  ../../FFMPEG/Includes/libavcodec/avcodec.h \
  ../../FFMPEG/Includes/libavutil/samplefmt.h \
  ../../FFMPEG/Includes/libavutil/cpu.h \
