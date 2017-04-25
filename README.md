@@ -15,7 +15,6 @@ With the AR.Drone 2.0 and my Sony VAIO Pro <a href="http://www.youtube.com/watch
 I have obtained update rates of around 30 Hz.
 
 If you're interested in a more graphical-interface approach, you might also look into 
-<a href="http://www.urbiforge.org/index.php/Projects/Urbi4ARDrone">URBI</a> or 
 <a href="http://www.willowgarage.com/pages/software/ros-platform">ROS</a>.
 
 <b>Please note that I am only supporting this project on 64-bit Ubuntu.
