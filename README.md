@@ -7,7 +7,7 @@ This repository contains source code for
 building a stubbed version of the AR.Drone AutoPylot program, which allows you to auto-pilot the 
 <a href="http://ardrone.parrot.com/parrot-ar-drone/usa/"> Parrot AR.Drone</a> 1.0 or 2.0 
 from source code written in Python,  on a computer running 64-bit 
-<a href="http://www.ubuntu.com">Ubuntu</a>.  
+<a href="http://www.ubuntu.com">Ubuntu</a> 14.04.  
 <a href="http://www.youtube.com/watch?v=_3697dtyOz4">This video</a> gives you an idea of what you can
 do with the drone in Python, using this package (see <a href="#greenball">below</a> for instructions).
 As the video shows, the update rate is fast enough to enable interesting experiments.

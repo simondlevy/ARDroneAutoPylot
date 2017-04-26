@@ -1,7 +1,7 @@
 prefix=
 exec_prefix=
 libdir=${pcfiledir}
-includedir=/home/levy/Desktop/ARDroneAutoPylot/ARDrone_SDK_2_0_1/ARDroneLib/FFMPEG/ffmpeg
+includedir=/home/levy/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg
 
 Name: libavdevice
 Description: FFmpeg device handling library
