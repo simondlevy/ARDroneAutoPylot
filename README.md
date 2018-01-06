@@ -7,7 +7,7 @@ This repository contains source code for
 building a stubbed version of the AR.Drone AutoPylot program, which allows you to auto-pilot the 
 <a href="http://ardrone.parrot.com/parrot-ar-drone/usa/"> Parrot AR.Drone</a> 1.0 or 2.0 
 from source code written in Python,  on a computer running 64-bit 
-<a href="http://www.ubuntu.com">Ubuntu</a> 14.04.  
+<a href="http://www.ubuntu.com">Ubuntu</a> 16.04.  
 <a href="http://www.youtube.com/watch?v=_3697dtyOz4">This video</a> gives you an idea of what you can
 do with the drone in Python, using this package (see <a href="#greenball">below</a> for instructions).
 As the video shows, the update rate is fast enough to enable interesting experiments.
@@ -17,7 +17,7 @@ I have obtained update rates of around 30 Hz.
 If you're interested in a more graphical-interface approach, you might also look into 
 <a href="http://www.willowgarage.com/pages/software/ros-platform">ROS</a>.
 
-<b>Please note that I am only supporting this project on 64-bit Ubuntu.
+<b>Please note that I am only supporting this project on 64-bit Ubuntu 16.04.
 I do not have the resources to support other OSs.</b>
 
 <a name="Getting_Started"> 
@@ -44,9 +44,15 @@ you'll have to modify <b>autopylot_gamepad.c</b> to reflect this.  If you're
 using Python, make sure to get the Python development environment:
 
 <pre>
-
 <b>sudo apt-get install python-dev</b> 
+</pre>
 
+Depending on what other libraries you already have installed, you may also need to do the following:
+
+<pre>
+<b>sudo apt-get install libsdl2-dev</b>
+<p>
+<b>sudo apt-get install libgtk2.0-dev</b>
 </pre>
 
 <a name="Joystick"> 

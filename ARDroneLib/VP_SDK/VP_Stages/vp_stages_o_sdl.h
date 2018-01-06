@@ -30,7 +30,8 @@
 
 #include <VP_Api/vp_api.h>
 
-#include <SDL/SDL.h>
+//#include <SDL/SDL.h>
+#include <SDL2/SDL.h>
 
 #if defined(_CK4215_) && defined(WIN32)
 #include <SDL/SDL_syswm.h>
@@ -62,7 +63,7 @@ typedef struct _vp_stages_output_sdl_config_
   // private
 
   SDL_Surface *surface;
-  SDL_Overlay *overlay;
+  //SDL_Overlay *overlay;
 
   uint32_t received;
 

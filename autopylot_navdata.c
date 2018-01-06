@@ -31,13 +31,13 @@ Adapted from code in ARDrone SDK Examples/Linux/sdk_demo
 #include "ardrone_autopylot.h"
 
 /* Initialization local variables before event loop  */
-inline C_RESULT navdata_init( void* data )
+/*inline*/ C_RESULT navdata_init( void* data )
 {
 	return C_OK;
 }
 
 /* Receving navdata during the event loop */
-inline C_RESULT navdata_process( const navdata_unpacked_t* const navdata )
+/*inline*/ C_RESULT navdata_process( const navdata_unpacked_t* const navdata )
 {	    
 	// Grab current navigation data from global
 	vp_os_memcpy(&g_navdata, navdata, sizeof(navdata_unpacked_t));
@@ -46,7 +46,7 @@ inline C_RESULT navdata_process( const navdata_unpacked_t* const navdata )
 }
 
 /* Relinquish the local resources after the event loop exit */
-inline C_RESULT navdata_release( void )
+/*inline*/ C_RESULT navdata_release( void )
 {
 	return C_OK;
 }

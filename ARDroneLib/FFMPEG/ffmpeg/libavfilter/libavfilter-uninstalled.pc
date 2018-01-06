@@ -1,12 +1,12 @@
 prefix=
 exec_prefix=
 libdir=${pcfiledir}
-includedir=/home/levy/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg
+includedir=/home/slevy/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg
 
 Name: libavfilter
 Description: FFmpeg video filtering library
 Version: 2.23.0
 Requires: 
 Conflicts:
-Libs: ${libdir}/libavfilter.a -lSDL -lm -pthread -lz 
+Libs: ${libdir}/libavfilter.a -lm -pthread -lz 
 Cflags: -I${includedir}
