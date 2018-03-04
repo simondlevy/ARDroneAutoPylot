@@ -27,6 +27,12 @@ Kdy = 0.25
 Kix = 0
 Kiy = 0
 
+# Support packages like ROS that expect command-line argv:
+# https://github.com/google/oauth2client/issues/642
+import sys
+if not hasattr(sys, 'argv'):
+        sys.argv  = ['']
+
 import cv2
 import numpy as np
 import greenball_tracker

@@ -1,7 +1,7 @@
 prefix=/usr/local
 exec_prefix=${prefix}
-libdir=/home/slevy/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_4.10.0-42-generic_GNU_Linux_usrbingcc_5.4.0
-includedir=/home/slevy/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../Includes
+libdir=/home/levy/Software/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_4.4.0-116-generic_GNU_Linux_usrbingcc_5.4.0
+includedir=/home/levy/Software/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../Includes
 
 Name: libavcodec
 Description: FFmpeg codec library
@@ -9,6 +9,6 @@ Version: 53.7.0
 Requires: libavutil = 51.9.1
 Requires.private: 
 Conflicts:
-Libs: -L${libdir} -lavcodec -lm -pthread -lz
+Libs: -L${libdir} -lavcodec -lSDL -lm -pthread -lbz2 -lz
 Libs.private: 
 Cflags: -I${includedir}

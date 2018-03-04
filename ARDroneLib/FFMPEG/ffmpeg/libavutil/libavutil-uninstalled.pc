@@ -1,7 +1,7 @@
 prefix=
 exec_prefix=
 libdir=${pcfiledir}
-includedir=/home/slevy/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg
+includedir=/home/levy/Software/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg
 
 Name: libavutil
 Description: FFmpeg utility library
