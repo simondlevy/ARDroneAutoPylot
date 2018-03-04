@@ -31,9 +31,8 @@ Kiy = 0
 # https://github.com/google/oauth2client/issues/642
 import sys
 if not hasattr(sys, 'argv'):
-        sys.argv  = ['']
+    sys.argv  = ['']
 
-import cv2
 import numpy as np
 import greenball_tracker
 

@@ -27,7 +27,7 @@ autopylot_agent.py - Python agent stub for AR.Drone Autopylot program.
 # https://github.com/google/oauth2client/issues/642
 import sys
 if not hasattr(sys, 'argv'):
-        sys.argv  = ['']
+    sys.argv  = ['']
 
 def action(img_bytes, img_width, img_height, is_belly, \
     ctrl_state, vbat_flying_percentage, theta, phi, psi, altitude, vx, vy):
