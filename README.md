@@ -324,7 +324,7 @@ more interesting.
   
 <h3>Working with ROS</h3>
 
-Thanks to [Alesolano](https://github.com/alesolano), ARDroneAutoPylot can now work with [rospy](http://wiki.ros.org/rospy), the Python client for the popular [ROS](http://wiki.ros.org/) platform. Check out Ale's solution [here](https://github.com/simondlevy/ARDroneAutoPylot/issues/1#issuecomment-371462385).
+Thanks to [Alesolano](https://github.com/alesolano), ARDroneAutoPylot can now work with [rospy](http://wiki.ros.org/rospy), the Python client for the popular [ROS](http://wiki.ros.org/) platform. Get Ale's solution [here](https://github.com/simondlevy/ARDroneAutoPylot/issues/1#issuecomment-371462385).
 
 <a name="matlab">
 
