@@ -32,9 +32,7 @@ from the AppStore.
 
 If you have a 
 <a href="http://www.amazon.com/Logitech-Extreme-Joystick-Silver-Black/dp/B00009OY9U">
-Logitech Extreme 30 Pro joystick</a> or
-
-<a href="http://www.amazon.com/Nyko-Core-Controller-Color-Playstation-3/dp/B003G2Z4FK">
+Logitech Extreme 30 Pro joystick</a> or <a href="http://www.amazon.com/Nyko-Core-Controller-Color-Playstation-3/dp/B003G2Z4FK">
 Playstation PS3 controller</a>, the only file you should need to 
 modify immediately in the repository is the <b>autopylot.makefile</b>, 
 to specify which kind of controller you have and its hexadecimal ID (which
