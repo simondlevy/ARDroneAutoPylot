@@ -295,16 +295,6 @@ Change to the repository directory and type <b>make</b>.  This will build the
 type mismatches).  Once you've built the program you can run it by typing
 <b>./ardrone_autopylot</b> in the directory where 
 you built it.  The <b>autopylot.makefile</b> is set up to use Python, but you can modify it for Matlab or C.
-For Python, you should first make sure that your <b>PYTHONPATH</b> shell variable is
-set to include the current directory: either on the command line, or (better 
-long-term solution) in your <b>.bashrc</b> file, put the following instruction:
-
-<pre><b>
-
-export PYTHONPATH=$PYTHONPATH:.
-
-</b></pre>
-
 
 The autopilot is intially off, so you are flying the AR.Drone
 manually. When you push the autopilot button (4 on the Logitech joystick,

@@ -1,7 +1,7 @@
 prefix=/usr/local
 exec_prefix=${prefix}
-libdir=/home/levy/Software/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_4.4.0-116-generic_GNU_Linux_usrbingcc_5.4.0
-includedir=/home/levy/Software/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../Includes
+libdir=/home/levys/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../../Soft/Build/targets_versions//ffmpeg_x86_64_PROD_MODE_Linux_3.13.0-151-generic_GNU_Linux_usrbingcc_4.8.4
+includedir=/home/levys/Desktop/ARDroneAutoPylot/ARDroneLib/FFMPEG/ffmpeg/../Includes
 
 Name: libavfilter
 Description: FFmpeg video filtering library
@@ -9,6 +9,6 @@ Version: 2.23.0
 Requires: 
 Requires.private: 
 Conflicts:
-Libs: -L${libdir} -lavfilter -lSDL -lm -pthread -lbz2 -lz
+Libs: -L${libdir} -lavfilter -lSDL -lm -pthread -lz
 Libs.private: 
 Cflags: -I${includedir}

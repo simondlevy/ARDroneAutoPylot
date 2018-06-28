@@ -61,12 +61,16 @@ void agent_init()
 {
 		
 	Py_Initialize();
-	
-	PyObject * pName = PyString_FromString(AGENT_MODULE_NAME);
-	
-	pModule = PyImport_Import(pName);
-	
-	Py_DECREF(pName);
+
+    // Make sure we can access Python modules in the current directory
+    PyRun_SimpleString("import sys");
+    PyRun_SimpleString("sys.path.append(\".\")");
+
+    PyObject * pName = PyString_FromString(AGENT_MODULE_NAME);
+
+    pModule = PyImport_Import(pName);
+
+    Py_DECREF(pName);
 	
 	if (pModule == NULL)
 {
